@@ -1,16 +1,14 @@
 const Author = require('./Author')
-const Comment = require('./Comment')
-const Post = require('./Post')
 
-const user1 = new Author('Tiana')
-const publi1= new Post ('Olá sou nova aqui :) essa é meu primeiro Blog! me ajudem ;-;')
-const user2 = new Author('Jordana')
-const publi2= new Comment('SEJA BEM VINDA!! :)')
-const user3= new Author('Mariana')
-const publi3= new Comment('Olá Tiana, posso lhe ajudar se quiser! ')
-console.log(user1)
-console.log(publi1)
-console.log(user2)
-console.log(publi2)
-console.log(user3)
-console.log(publi3)
+// Criando o autor
+const john = new Author('John Wick')
+
+// Criando uma postagem
+const post = john.createPost('As crônicas de John Wick', 'bla bla bla bla')
+
+// Criando comentários
+post.addComments('Sopa', 'Eu amo as crônicas do cara aí')
+post.addComments('Alan', 'Eu odeio as crônicas desse cara muito feio!')
+
+console.log(john)
+console.log(post)
