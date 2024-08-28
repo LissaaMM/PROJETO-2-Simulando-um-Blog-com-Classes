@@ -1,8 +1,8 @@
 class Comment {
-    constructor(autor, comentario) {
-        this.autor = autor
-        this.comentario = comentario
-    }
+  constructor(author, content) {
+    this.author = author
+    this.content = content
+  }
 }
 
 module.exports = Comment
