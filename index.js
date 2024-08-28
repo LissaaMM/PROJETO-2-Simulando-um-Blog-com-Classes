@@ -1,14 +1,8 @@
 const Author = require('./Author')
+const julio = new Author('julio')
+const post = julio.createPost('Receitas todo dia', 'receitas de vovô')
+post.addComments('Juliana', 'Eu amo asrecietas dele!')
+post.addComments('João', 'Eu odeio as receitas dele!')
 
-// Criando o autor
-const john = new Author('John Wick')
-
-// Criando uma postagem
-const post = john.createPost('As crônicas de John Wick', 'bla bla bla bla')
-
-// Criando comentários
-post.addComments('Sopa', 'Eu amo as crônicas do cara aí')
-post.addComments('Alan', 'Eu odeio as crônicas desse cara muito feio!')
-
-console.log(john)
+console.log(julio)
 console.log(post)
